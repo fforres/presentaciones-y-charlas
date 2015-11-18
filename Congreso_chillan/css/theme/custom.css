@@ -1,0 +1,67 @@
+/*********************************************
+ * CUSTOM
+ *********************************************/
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+;
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.autobombo-list {
+    margin-top: 15px !important;
+    list-style-type: circle !important;
+}
+
+
+.not-so-big{
+	font-size: 200% !important;
+}
+.big{
+	font-size: 300% !important;
+}
+.bigger{
+	font-size: 600% !important;
+}
+.biggest{
+	font-size: 1000% !important;
+}
+.biggestest{
+	font-size: 1500% !important;
+}
+
+
+
+.highlight-php{
+	color: #6082BB !important;
+}
+.highlight-green{
+    color: #14CC14 !important;
+}
+.color-red{
+	color: #FF0E0E !important;
+}
+.color-yellow{
+	color: yellow !important;
+}
+.color-laserena{
+	color: #8B0000 !important;
+}
+.color-blue{
+	color: blue !important;
+}
