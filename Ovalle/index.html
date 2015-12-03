@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="@fforres">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
+		<link rel="stylesheet" href="css/theme/custom.css">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Fonts -->
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" id="fontawesome">
+        <link rel="stylesheet" href="lib/font/mfizz/font-mfizz.css" id="fontfizz">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h3>El JavaScripto y la Orden del DOM</h3>
+					<p>Mini Intro a React</p>
+				</section>
+
+
+				<section>
+					<h2>Autobombo</h2>
+					<img src="images/xabadu.jpg" width="40%" height="40%" class="left">
+					<ul class="autobombo-list">
+					<li>SDE @ Groupon</li>
+					<li>JS Chile & Chile Dev <3</li>
+					<li>IC Champion</li>
+					</ul>
+					<p>Fernando Larrañaga - @xabadu</p>
+				</section>
+
+				<section>
+					<h2>Autobombo</h2>
+					<ul class="autobombo-list">
+					<li>SDE @ Groupon</li>
+					<li>Noders & JS Chile</li>
+					<li>Level 3 Salsa Ninja</li>
+					</ul>
+					<img src="images/fforres.jpg" width="40%" height="40%" class="right">
+					<p>Felipe Torres - @fforres</p>
+				</section>
+
+				<section>
+					<h3>Javascript</h3>
+					<img 
+						class="fragment zoom-in"
+						src="images/alert.png" 
+						width="100%" 
+						height="100%" 
+						class="left">
+				</section>
+
+				<section>
+					<h3>Javascript</h3>
+				</section>
+
+				<section data-background-video="video/nodebots.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+					<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+						<h2>NodeBots</h2>
+					</div>
+				</section>
+
+				<section data-background-video="video/games.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+					<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+						<h2>Gaming</h2>
+					</div>
+				</section>
+
+				<section>
+					<h3>WebGL / (Autocad Web?)</h3>
+				</section>
+
+				<section data-background="gifs/woah.gif">
+					<div  class="fragment zoom-in" style="background-color: rgba(0, 0, 0, 0.4); color: #fff; padding: 20px;">
+						<h2>Woah!</h2>
+					</div>
+				</section>
+
+
+				<section>
+					<h3> Pero todo tiene un comienzo </h3>
+					<aside class="notes">
+						para entender esto, hay que primero revisar los inicios.
+                    </aside>
+				</section>
+
+				<section>
+					<h3> JS Frameworks </h3>
+					<aside class="notes">
+						Conocen alguno de los siguientes?
+                    </aside>
+				</section>
+				
+
+				<section>
+                    <span class="fragment zoom-in"> jQuery - </span>
+                    <span class="fragment zoom-in"> Batman.JS - </span>
+                    <span class="fragment zoom-in"> MooTools - </span>
+                    <span class="fragment zoom-in"> YUI - </span>
+                    <span class="fragment zoom-in"> jQuery UI - </span>
+                    <span class="fragment zoom-in"> Knockout JS - </span>
+                    <span class="fragment zoom-in"> Wakanda - </span>
+                    <span class="fragment zoom-in"> Dojo - </span>
+                    <span class="fragment zoom-in"> Ember.JS - </span>
+                    <span class="fragment zoom-in"> AngularJS - </span>
+                    <span class="fragment zoom-in"> BackBone.js - </span>
+                    <span class="fragment zoom-in"> KendoUI - </span>
+                    <span class="fragment zoom-in"> Unified.js</span>
+                    <aside class="notes">
+						Son hartos cierto?
+						Cual es la sensacion que da con la web?
+                    </aside>
+                </section>
+
+
+
+                <section data-background-video="video/rossa.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+				</section>
+
+				<section data-transition="zoom-in slide-out">
+                    <h2>La web se mueve muy rapido!</h2>
+                    <aside class="notes">
+						Los frameworks son abstraciones de JS, que intentan dar  soluciones a diversos problemas, y todos intentan solucionar en mayor o menor manera algunos problemas
+                    </aside>
+                </section>
+
+
+                <section data-transition="zoom-in slide-out">
+                    <ul>
+                    	<li class="fragment zoom-in">Desarrollo de Aplicaciones</li>
+                    	<li class="fragment zoom-in">Fragmentacion de Navegadores</li>
+                    	<li class="fragment zoom-in">Api DOM</li>
+                    	<li class="fragment zoom-in">Retro Compatibilidad</li>
+                    	<li class="fragment zoom-in">Experiencia de Desarrollo</li>
+                    	<li class="fragment zoom-in">Experiencia de Usuario</li>
+                    	<li class="fragment zoom-in">Unicorn Framework</li>
+                    	<li class="fragment zoom-in">MVC / MVVM / MV*</li>
+                    	<li class="fragment zoom-in">ETC...</li>
+                    </ul>
+                    <aside class="notes">
+						Cuando pensamos que ya era suficiente:
+                     </aside>
+                </section>
+
+
+                <section data-transition="zoom-in slide-out">
+                    <h2>ReactJS!</h2>
+                    <h4 class="fragment">(En serio? Otro más?)</h4>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section data-transition="zoom-in slide-out">
+                    <h1 class="bigger">ಠ_ಠ</h1>
+                </section>
+
+
+				<section>
+                    <p class="">React se basa en 3 cosas fundamentales</p>
+                </section>
+
+
+
+                <section>
+                    <p class="not-so-big">1.- Componentes reutilizables </p>
+                </section>
+
+
+                <section>
+                    <p class="not-so-big">2.- Estado de la aplicación</p>
+                </section>
+
+
+                <section>
+                    <p class="not-so-big">3.- Hacer una cosa y hacerla bien</p>
+                </section>
+
+                 <section>
+                    <p class="not-so-big">React es solo la V dentro del MVC</p>
+                </section>
+
+
+
+                <section data-transition="zoom-in zoom-out">
+                    <p class="biggest font-shadow color-yellow"><i class="fa fa-fw text-right icon-javascript-alt"></i></p>
+                </section>
+
+
+
+
+                <section data-transition="slide-in slide-out">
+                    <p class="big">No todo lo que brilla es oro</p>
+                </section>
+
+                <section data-transition="slide-in slide-out">
+                    <p class="bigger">JavaScript & XML</p>
+                </section>
+
+                <section data-transition="slide-in slide-out">
+                    <h1 class="bigger">ಠ_ಠ</h1>
+                </section>
+                
+                <section>
+                    <table class="not-so-big">
+                        <tr>
+                            <th class="text">OldSchool</th>
+                            <th class="text">ReactJS</th>
+                        </tr>
+                        <tr class="fragment zoom-in">
+                            <td>Directivas</td>
+                            <td>Componentes</td>
+                        </tr>
+                        <tr class="fragment zoom-in">
+                            <td>JS > DOM</td>
+                            <td>DOM Diff</td>
+                        </tr>
+                        <tr class="fragment zoom-in">
+                            <td>JS + XML</td>
+                            <td>JSX</td>
+                        </tr>
+                    </table>
+                </section>
+
+
+                <section>
+                    <p class="big">JSX</p>
+                    <p class="text fragment zoom-in">AKA: Ok... quizás no es tan malo</p>
+                </section>
+
+                <section>
+                    <p class="big">Esto</p>
+                </section>
+
+                <section>
+                    <div style="font-size: 190%;">
+                        <pre><code class="jsx" data-trim contenteditable>
+<a href="https://facebook.github.io/react/">
+    Hello!
+</a>
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="big">Se vuelve esto:</p>
+                </section>
+
+                <section>
+                    <div style="font-size: 150%;">
+                        <pre><code class="jsx" data-trim contenteditable>
+{
+    React.createElement('a', 
+    {
+        href: 'https://facebook.github.io/react/'
+    }, 
+    'Hello!')
+}
+
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="big">Y esto</p>
+                </section>
+
+                <section>
+                    <div style="font-size: 190%;">
+                        <pre><code class="html" data-trim contenteditable>
+<div id="example">
+    <ul class="unaLista">
+        <li>Primer Item</li>
+        <li>Segundo Item</li>
+    </ul>
+</div>
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="big">Se vuelve esto</p>
+                </section>
+
+                <section>
+                    <div style="font-size: 150%;">
+                        <pre><code class="jsx" data-trim contenteditable>
+{
+    ReactDOM.render(React.createElement('ul', 
+        { 
+            className: 'unaLista' 
+        }, 
+        React.createElement('li', null, 'Primer Item'), 
+        React.createElement('li', null, 'Segundo Item')
+    ), document.getElementById('example'));
+}
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p class="big">JSX</p>
+                    <p class="text fragment zoom-in">AKA: Ok... quizás no es tan malo</p>
+                </section>
+
+                <section>
+                    <p class="big">Componentes</p>
+                    <p class="fragment zoom-in">AKA: JA-JA Google </p>
+                </section>
+
+                <section id="angular" data-background="lib/img/angular.png" data-background-transition='slide' >
+                </section>
+
+                <section>
+                    <p class="big">¿Directivas?</p>
+                </section>
+
+                <section>
+                    <p class="bigger"> &lt;Element> </p>
+                    <p class="bigger"> &lt;Element> </p>
+                </section>
+
+                <section>
+                    <p class="big"> &lt;div> </p>
+                    <p class="big"> &lt;Element/> </p>
+                    <p class="big"> &lt;/div> </p>
+                </section>
+
+                <section>
+                    <p class="big"> &lt;div> </p>
+                    <p class="big"> &lt;Element/> </p>
+                    <p class="big"> &lt;Element/> </p>
+                    <p class="big"> &lt;Element/> </p>
+                    <p class="big"> &lt;/div> </p>
+                </section>
+
+                 <section>
+                    <p class="big">DOM Diff</p>
+                    <p class="fragment zoom-in">AKA: OMG!!!! </p>
+                </section>
+
+                <section>
+                    <div class="text">
+                    <p class="text">
+                        Agregar un Nodo
+                    </p>
+                    <p class="text">
+                        <pre><code class="html" data-trim contenteditable>
+renderA: &lt;div>&lt;span>first&lt;/span>&lt;/div>
+renderB: &lt;div>&lt;span>first&lt;/span>&lt;span>second&lt;/span>&lt;/div>
+=> [insertNode &lt;span>second&lt;/span>]
+                        </code></pre>
+                    </p>
+                    </div> 
+                </section>
+
+
+                <section>
+                    <div class="text">
+                    <p class="text">
+                        Cambiar un Nodo
+                    </p>
+                    <p class="text">
+                        <pre><code class="html" data-trim contenteditable>
+renderA: &lt;div />
+renderB: &lt;span />
+=> [removeNode &lt;div />], [insertNode &lt;span />]
+                        </code></pre>
+                    </p>
+                    </div> 
+                </section>
+
+                <section>
+                    <div class="text">
+                    <p class="text">
+                        Actualizar un Nodo
+                    </p>
+                    <p class="text">
+                        <pre><code class="html" data-trim contenteditable>
+renderA: &lt;div id="before" />
+renderB: &lt;div id="after" />
+=> [replaceAttribute id "after"]
+                        </code></pre>
+                    </p>
+                    </div> 
+                </section>
+
+                <section>
+                    <p class="bigger">ID</p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <p class="big">Pero falta algo</p>
+                    <p class="fragment zoom-in big">Código!</p>
+                </section>
+
+
+                <section>
+                    <p class="big">Yo se lo que estan pensando</p>
+                </section>
+
+                <section>
+                    <p class="big">Forres! Esto es de lo más cool!</p>
+                </section>
+
+                <section data-background="lib/img/awesome.gif" data-background-transition='slide'>
+                </section>
+
+                <section>
+                    <p class="big">Pero... puede ser mejor</p>
+                </section>
+
+                <section>
+                    <p class="big color-yellow">WEBPACK!</p>
+                    <p class="big color-yellow">BABEL!</p>
+                    <p class="text fragment zoom-in ">Dev Server</p>
+                    <p class="text fragment zoom-in ">Hot Reloading</p>
+                    <p class="text fragment zoom-in ">NPM</p>
+                    <p class="text fragment zoom-in ">DX</p>
+                    <p class="text fragment zoom-in ">GIT</p>
+                </section>
+
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
