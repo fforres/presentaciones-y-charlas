@@ -1336,3 +1336,32 @@ html:-moz-full-screen-ancestor {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+/*********************************************
+ * CUSTOM
+ *********************************************/
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+};
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.autobombo-list {
+  margin-top: 15px !important;
+  list-style-type: circle !important;
+}

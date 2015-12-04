@@ -3,27 +3,19 @@
 
 	<head>
 		<meta charset="utf-8">
-
-		<title>reveal.js – The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
-
+		<title>El Javascripto y los Emuladores de la Muerte</title>
+		<meta name="description" content="El Javascripto y los Emuladores de la Muerte">
+		<meta name="author" content="Xabadu">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/league.css" id="theme">
-		<link rel="stylesheet" href="css/theme/custom.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" id="fontawesome">
+		<link rel="stylesheet" href="bower_components/font-mfizz/css/font-mfizz.css" id="fontawesome">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Fonts -->
-		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" id="fontawesome">
-        <link rel="stylesheet" href="lib/font/mfizz/font-mfizz.css" id="fontfizz">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -45,20 +37,21 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-
 				<section>
-					<h3>El JavaScripto y la Orden del DOM</h3>
-					<p>Mini Intro a React</p>
+					<h1>EL JAVASCRIPTO</h1>
+					<h3>Y los emuladores de la muerte</h3>
+					<p>
+						<small><a href="http://twitter.com/xabadu">@xabadu</a> / <a href="http://twitter.com/fforres">@fforres</a></small>
+					</p>
 				</section>
-
 
 				<section>
 					<h2>Autobombo</h2>
 					<img src="images/xabadu.jpg" width="40%" height="40%" class="left">
 					<ul class="autobombo-list">
-					<li>SDE @ Groupon</li>
-					<li>JS Chile & Chile Dev <3</li>
-					<li>IC Champion</li>
+						<li>SDE @ Groupon</li>
+						<li>JS Chile & Chile Dev <3</li>
+						<li>IC Champion</li>
 					</ul>
 					<p>Fernando Larrañaga - @xabadu</p>
 				</section>
@@ -66,68 +59,233 @@
 				<section>
 					<h2>Autobombo</h2>
 					<ul class="autobombo-list">
-					<li>SDE @ Groupon</li>
-					<li>Noders & JS Chile</li>
-					<li>Level 3 Salsa Ninja</li>
+						<li>SDE @ Groupon</li>
+						<li>Noders & JS Chile</li>
+						<li>Level 3 Salsa Ninja</li>
 					</ul>
 					<img src="images/fforres.jpg" width="40%" height="40%" class="right">
 					<p>Felipe Torres - @fforres</p>
 				</section>
 
 				<section>
-					<h3>Javascript</h3>
-					<img 
-						class="fragment zoom-in"
-						src="images/alert.png" 
-						width="100%" 
-						height="100%" 
-						class="left">
+					<h2>El Javascripto y el Principe Nativo</h2>
+					<p>a.k.a.</p>
+					<p>Como estuvimos a punto de dejarlo todo e irnos a vender cuchuflís a la playa</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<p>Todo parte con una historia en una pequeña startup</p>
+					</section>
+					<section>
+						<img src="images/rainbow.gif" width="80%">
+					</section>
+					<section>
+						<img src="images/fire.gif" width="80%">
+					</section>
+					<section>
+						<blockquote>
+							¿Android? Claro, tenemos años de experiencia al respecto.
+						</blockquote>
+					</section>
+					<section>
+						<img src="images/math.gif">
+						<blockquote class="fragment">
+							Existencia de la tecnología + 5 años = Experiencia de la Startup
+						</blockquote>
+					</section>
 				</section>
 
 				<section>
-					<h3>Javascript</h3>
-				</section>
+					<section>
+						<p>¿Cómo empezamos?</p>
+						<img src="images/typing.gif">
+					</section>
+					<section>
+						<h3>La (no tan) ayuda</h3>
+						<ul>
+							<li>SDK</li>
+							<li>Dependencias</li>
+							<li>Ejemplos (?)</li>
+							<li>Documentación</li>
+							<li>Membresías</li>
+						</ul>
+					</section>
+					<section>
+						<p>El primer hola mundo</p>
+						<pre>
+							<code class="hljs" data-trim contenteditable>
+								import android.app.Activity;
+import android.os.Bundle;
+import android.widget.TextView;
 
-				<section data-background-video="video/nodebots.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
-					<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
-						<h2>NodeBots</h2>
-					</div>
-				</section>
+public class HelloWorldActivity extends Activity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
-				<section data-background-video="video/games.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
-					<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
-						<h2>Gaming</h2>
-					</div>
+        TextView text = new TextView(this);
+        text.setText("Hola mundo");
+        setContentView(text);
+    }
+}
+							</code>
+						</pre>
+					</section>
+					<section>
+						<p>Hola <s>mundo</s> emulador</p>
+						<img src="images/waiting.gif" class="fragment">
+						<img src="images/bored.gif" width="33.5%" class="fragment">
+						<img src="images/crying.gif" width="33.5%" class="fragment">
+					</section>
+					<section>
+						<img src="images/emulator.png">
+					</section>
 				</section>
 
 				<section>
-					<h3>WebGL / (Autocad Web?)</h3>
+					<section>
+						<h2>PROBLEMAS</h2>
+					</section>
+					<section>
+						<p>(Muchos) nuevos conceptos</p>
+						<img src="images/confused.gif">
+					</section>
+					<section>
+						<p>Especialización de lenguajes</p>
+						<img src="images/indiana.gif" width="70%">
+					</section>
+					<section>
+						<p>Fragmentación</p>
+						<img src="images/cookies-1.jpg" width="46%" class="fragment">
+						<img src="images/cookies-2.jpg" width="35%" class="fragment">
+					</section>
+					<section>
+						<p>Iteraciones de desarrollo lentas</p>
+						<img src="images/slow.gif" width="60%">
+					</section>
+					<section>
+						<p>Implementaciones de versiones (muy) lentas</p>
+						<img src="images/os-implementation.png">
+					</section>
+					<section>
+						<p>Tareas que debiesen ser sencillas, realmente no lo son</p>
+						<img src="images/grid-1.png" width="45%">
+						<img src="images/grid-2.png" width="45%">
+					</section>
+					<section>
+						<img src="images/col-1.png" width="35%">
+						<img src="images/col-2.png" width="35%">
+						<img src="images/col-3.png" width="35%">
+						<img src="images/col-4.png" width="35%">
+					</section>
+					<section>
+						<p>Baja tolerancia al cambio</p>
+						<img src="images/app-store.png">
+					</section>
+					<section>
+						<p>Testing & Debugging</p>
+						<img src="images/frustration.gif">
+					</section>
 				</section>
 
-				<section data-background="gifs/woah.gif">
-					<div  class="fragment zoom-in" style="background-color: rgba(0, 0, 0, 0.4); color: #fff; padding: 20px;">
-						<h2>Woah!</h2>
-					</div>
+				<section>
+					<p>¿Resultado?</p>
+					<img src="images/pizza.gif" width="50%">
 				</section>
+
+				<section>
+					<h2>El Javascripto y la cámara de los Frameworks</h2>
+					<p>a.k.a.</p>
+					<p>Esto necesita más jQuery</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Mientras tanto en la Web</h2>
+						<p class="fragment">Las cosas estaban cambiando...</p>
+						<p class="fragment">Habían nuevas tecnologías</p>
+						<p><span class="fragment">y la experiencia de desarrollo era mucho mejor.</p>
+					</section>
+					<section>
+						<ul>
+							<li>NodeJS</li>
+							<li>Sockets</li>
+							<li>Frameworks JS: Ember, Angular, Backbone</li>
+							<li>CSS Preprocessors</li>
+						</ul>
+					</section>
+					<section>
+						<p>Conclusión: Web rawks!</p>
+						<img src="images/yes.gif" width="45%">
+						<p class="fragment">¿Y si llevamos algo de esto a móvil?</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Hola Frameworks</h2>
+					</section>
+					<section>
+						<img src="images/appcelerator.png" width="20%">
+						<img src="images/cordova.png" width="20%">
+						<img src="images/corona.png" width="20%">
+						<img src="images/phonegap.png" width="20%">
+						<img src="images/sencha.png" width="20%">
+						<img src="images/ionic.png" width="20%">
+					</section>
+					<section>
+						<p>Algunos problemas los resolvieron muy bien</p>
+							<ul>
+								<li class="fragment">Fragmentación</li>
+								<li class="fragment">Lenguajes</li>
+								<li class="fragment">Nuevos conceptos</li>
+								<li class="fragment">Complejidad de tareas</li>
+								<li class="fragment">Simplificación del diseño *</li>
+								<li class="fragment">Testing & Debugging *</li>
+							</ul>
+					</section>
+					<section>
+						<p>Y otros... no tanto</p>
+							<ul>
+								<li class="fragment">Iteraciones de desarrollo seguían siendo lentas</li>
+								<li class="fragment">Baja tolerancia al cambio</li>
+							</ul>
+					</section>
+					<section>
+						<p>Pero además, generaron algunos problemas nuevos:</p>
+							<ul class="autobombo-list">
+								<li class="fragment">Performance</li>
+								<li class="fragment">Acceso a core features</li>
+								<li class="fragment">Simplificación del diseño</li>
+							</ul>
+							<img src="images/galaxy.jpg" class="fragment right">
+					</section>
+				</section>
+
+
 
 
 				<section>
-					<h3> Pero todo tiene un comienzo </h3>
-					<aside class="notes">
-						para entender esto, hay que primero revisar los inicios.
-                    </aside>
+				<section>
+					<h2>EL JAVASCRIPTO Y EL (NO TAN) PRISIONERO DE LA WEB</h2>
+					<p>a.k.a.</p>
+					<p>JavaScript... es como Java, ¿no?</p>
 				</section>
 
-				<section>
-					<h3> JS Frameworks </h3>
-					<aside class="notes">
-						Conocen alguno de los siguientes?
-                    </aside>
-				</section>
-				
+
+
 
 				<section>
-                    <span class="fragment zoom-in"> jQuery - </span>
+					<p>El mercado de fameworks está lleno!</p>
+				</section>
+
+
+
+
+				<section>
+                    <span> jQuery - </span>
                     <span class="fragment zoom-in"> Batman.JS - </span>
                     <span class="fragment zoom-in"> MooTools - </span>
                     <span class="fragment zoom-in"> YUI - </span>
@@ -140,325 +298,267 @@
                     <span class="fragment zoom-in"> BackBone.js - </span>
                     <span class="fragment zoom-in"> KendoUI - </span>
                     <span class="fragment zoom-in"> Unified.js</span>
-                    <aside class="notes">
-						Son hartos cierto?
-						Cual es la sensacion que da con la web?
-                    </aside>
-                </section>
-
-
-
-                <section data-background-video="video/rossa.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
 				</section>
 
-				<section data-transition="zoom-in slide-out">
-                    <h2>La web se mueve muy rapido!</h2>
-                    <aside class="notes">
-						Los frameworks son abstraciones de JS, que intentan dar  soluciones a diversos problemas, y todos intentan solucionar en mayor o menor manera algunos problemas
-                    </aside>
-                </section>
-
-
-                <section data-transition="zoom-in slide-out">
-                    <ul>
-                    	<li class="fragment zoom-in">Desarrollo de Aplicaciones</li>
-                    	<li class="fragment zoom-in">Fragmentacion de Navegadores</li>
-                    	<li class="fragment zoom-in">Api DOM</li>
-                    	<li class="fragment zoom-in">Retro Compatibilidad</li>
-                    	<li class="fragment zoom-in">Experiencia de Desarrollo</li>
-                    	<li class="fragment zoom-in">Experiencia de Usuario</li>
-                    	<li class="fragment zoom-in">Unicorn Framework</li>
-                    	<li class="fragment zoom-in">MVC / MVVM / MV*</li>
-                    	<li class="fragment zoom-in">ETC...</li>
-                    </ul>
-                    <aside class="notes">
-						Cuando pensamos que ya era suficiente:
-                     </aside>
-                </section>
-
-
-                <section data-transition="zoom-in slide-out">
-                    <h2>ReactJS!</h2>
-                    <h4 class="fragment">(En serio? Otro más?)</h4>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-
-                <section data-transition="zoom-in slide-out">
-                    <h1 class="bigger">ಠ_ಠ</h1>
-                </section>
 
 
 				<section>
-                    <p class="">React se basa en 3 cosas fundamentales</p>
-                </section>
+					<p>Una pequeña startup con una pequeña idea</p>
+				</section>
 
 
 
-                <section>
-                    <p class="not-so-big">1.- Componentes reutilizables </p>
-                </section>
-
-
-                <section>
-                    <p class="not-so-big">2.- Estado de la aplicación</p>
-                </section>
-
-
-                <section>
-                    <p class="not-so-big">3.- Hacer una cosa y hacerla bien</p>
-                </section>
-
-                 <section>
-                    <p class="not-so-big">React es solo la V dentro del MVC</p>
-                </section>
+				<section>
+					<img src="images/facebook.png" width="27%">
+					<p class="fragment">Hacer una cosa y hacerla bien</p>
+				</section>
 
 
 
-                <section data-transition="zoom-in zoom-out">
-                    <p class="biggest font-shadow color-yellow"><i class="fa fa-fw text-right icon-javascript-alt"></i></p>
-                </section>
+				<section>
+					<img src="images/react.png"  width="33%">
+					<p class="fragment">ReactJS</p>
+					<small class="fragment">la V del MVC, MVVM, MV*</small>
+				</section>
 
 
 
-
-                <section data-transition="slide-in slide-out">
-                    <p class="big">No todo lo que brilla es oro</p>
-                </section>
-
-                <section data-transition="slide-in slide-out">
-                    <p class="bigger">JavaScript & XML</p>
-                </section>
-
-                <section data-transition="slide-in slide-out">
-                    <h1 class="bigger">ಠ_ಠ</h1>
-                </section>
-                
-                <section>
-                    <table class="not-so-big">
-                        <tr>
-                            <th class="text">OldSchool</th>
-                            <th class="text">ReactJS</th>
-                        </tr>
-                        <tr class="fragment zoom-in">
-                            <td>Directivas</td>
-                            <td>Componentes</td>
-                        </tr>
-                        <tr class="fragment zoom-in">
-                            <td>JS > DOM</td>
-                            <td>DOM Diff</td>
-                        </tr>
-                        <tr class="fragment zoom-in">
-                            <td>JS + XML</td>
-                            <td>JSX</td>
-                        </tr>
-                    </table>
-                </section>
+				<section>
+					<p>Todo estaba por cambiar en base a 2 conceptos:</p>
+					<ul>
+						<li class="fragment">Componentes reutilizables</li>
+						<li class="fragment">Estado de las aplicaciones</li>
+					</ul>
+				</section>
+				</section>
 
 
-                <section>
-                    <p class="big">JSX</p>
-                    <p class="text fragment zoom-in">AKA: Ok... quizás no es tan malo</p>
-                </section>
 
-                <section>
-                    <p class="big">Esto</p>
-                </section>
+				<section>
+					<section>
+						<h2>Componentes</h2>
+					</section>
 
-                <section>
-                    <div style="font-size: 190%;">
-                        <pre><code class="jsx" data-trim contenteditable>
-<a href="https://facebook.github.io/react/">
-    Hello!
-</a>
-                        </code></pre>
-                    </div>
-                </section>
 
-                <section>
-                    <p class="big">Se vuelve esto:</p>
-                </section>
 
-                <section>
-                    <div style="font-size: 150%;">
-                        <pre><code class="jsx" data-trim contenteditable>
-{
-    React.createElement('a', 
-    {
-        href: 'https://facebook.github.io/react/'
-    }, 
-    'Hello!')
-}
-
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">Y esto</p>
-                </section>
-
-                <section>
-                    <div style="font-size: 190%;">
-                        <pre><code class="html" data-trim contenteditable>
-<div id="example">
-    <ul class="unaLista">
-        <li>Primer Item</li>
-        <li>Segundo Item</li>
-    </ul>
+					<section>
+					<h3>User Card</h3>
+    <pre><code class="html" data-trim contenteditable>
+<div>
+   <div class="img">
+       <img src="./usuario">
+   </div>
+   <div>
+       <div class="nombre"> John </div>
+       <div class="apellido"> Cena </div>
+    </div>
 </div>
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">Se vuelve esto</p>
-                </section>
-
-                <section>
-                    <div style="font-size: 150%;">
-                        <pre><code class="jsx" data-trim contenteditable>
-{
-    ReactDOM.render(React.createElement('ul', 
-        { 
-            className: 'unaLista' 
-        }, 
-        React.createElement('li', null, 'Primer Item'), 
-        React.createElement('li', null, 'Segundo Item')
-    ), document.getElementById('example'));
-}
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">JSX</p>
-                    <p class="text fragment zoom-in">AKA: Ok... quizás no es tan malo</p>
-                </section>
-
-                <section>
-                    <p class="big">Componentes</p>
-                    <p class="fragment zoom-in">AKA: JA-JA Google </p>
-                </section>
-
-                <section id="angular" data-background="lib/img/angular.png" data-background-transition='slide' >
-                </section>
-
-                <section>
-                    <p class="big">¿Directivas?</p>
-                </section>
-
-                <section>
-                    <p class="bigger"> &lt;Element> </p>
-                    <p class="bigger"> &lt;Element> </p>
-                </section>
-
-                <section>
-                    <p class="big"> &lt;div> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;/div> </p>
-                </section>
-
-                <section>
-                    <p class="big"> &lt;div> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;/div> </p>
-                </section>
-
-                 <section>
-                    <p class="big">DOM Diff</p>
-                    <p class="fragment zoom-in">AKA: OMG!!!! </p>
-                </section>
-
-                <section>
-                    <div class="text">
-                    <p class="text">
-                        Agregar un Nodo
-                    </p>
-                    <p class="text">
-                        <pre><code class="html" data-trim contenteditable>
-renderA: &lt;div>&lt;span>first&lt;/span>&lt;/div>
-renderB: &lt;div>&lt;span>first&lt;/span>&lt;span>second&lt;/span>&lt;/div>
-=> [insertNode &lt;span>second&lt;/span>]
-                        </code></pre>
-                    </p>
-                    </div> 
-                </section>
-
-
-                <section>
-                    <div class="text">
-                    <p class="text">
-                        Cambiar un Nodo
-                    </p>
-                    <p class="text">
-                        <pre><code class="html" data-trim contenteditable>
-renderA: &lt;div />
-renderB: &lt;span />
-=> [removeNode &lt;div />], [insertNode &lt;span />]
-                        </code></pre>
-                    </p>
-                    </div> 
-                </section>
-
-                <section>
-                    <div class="text">
-                    <p class="text">
-                        Actualizar un Nodo
-                    </p>
-                    <p class="text">
-                        <pre><code class="html" data-trim contenteditable>
-renderA: &lt;div id="before" />
-renderB: &lt;div id="after" />
-=> [replaceAttribute id "after"]
-                        </code></pre>
-                    </p>
-                    </div> 
-                </section>
-
-                <section>
-                    <p class="bigger">ID</p>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-                <section>
-                    <p class="big">Pero falta algo</p>
-                    <p class="fragment zoom-in big">Código!</p>
-                </section>
-
-
-                <section>
-                    <p class="big">Yo se lo que estan pensando</p>
-                </section>
-
-                <section>
-                    <p class="big">Forres! Esto es de lo más cool!</p>
-                </section>
-
-                <section data-background="lib/img/awesome.gif" data-background-transition='slide'>
-                </section>
-
-                <section>
-                    <p class="big">Pero... puede ser mejor</p>
-                </section>
-
-                <section>
-                    <p class="big color-yellow">WEBPACK!</p>
-                    <p class="big color-yellow">BABEL!</p>
-                    <p class="text fragment zoom-in ">Dev Server</p>
-                    <p class="text fragment zoom-in ">Hot Reloading</p>
-                    <p class="text fragment zoom-in ">NPM</p>
-                    <p class="text fragment zoom-in ">DX</p>
-                    <p class="text fragment zoom-in ">GIT</p>
-                </section>
+    </code></pre>
+					</section>
 
 
 
+					<section>
+					<h3>Componente usercard</h3>
+<pre><code class="html" data-trim contenteditable>
+<userCard/>
+</code></pre>
+					</section>
 
+					<section>
+						<h2> < Griddle /></h2>
+						<p class="fragment">< Griddle results={fakeData} /></p>
+					</section>
+
+
+					<section>
+						<img src="images/griddle.png" alt="">
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Estados de Aplicaciones</h2>
+					</section>
+
+
+					<section>
+						<p> Maquina de Estados </p>
+						<img src="images/lights.gif" width="60%">
+					</section>
+					<section>
+						<h2> semaforo </h2>
+						<p class="fragment"> verde </p>
+						<p class="fragment"> amarillo </p>
+						<p class="fragment"> rojo </p>
+					</section>
+					<section>
+				    	<pre><code class="rect"  style="font-size: 120%" data-trim contenteditable>
+<semaforo>
+   <LuzVerde></LuzVerde>
+   <LuzAmarilla></LuzAmarilla>
+   <LuzRoja></LuzRoja>
+</semaforo>
+						</code></pre>
+					</section>
+					<section>
+				    	<pre><code class="rect" style="font-size: 120%" data-trim contenteditable>
+<semaforo>
+   <Luz tipo="{color}"></Luz>
+</semaforo>
+						</code></pre>
+					</section>
+
+
+				</section>
+
+
+
+				<section>
+					<section>
+						<h2>React Nativo</h2>
+					</section>
+
+
+					<section>
+						<h2>Estados </h2>
+						<p> - Y - </p>
+						<h2>Componentes </h2>
+					</section>
+
+					<section>
+						<p style="font-size:1.3em">React Nativo</p>
+                   		<p class="biggestest font-shadow color-yellow"><i class="fa fa-fw icon-javascript fragment" style="font-size:5em"></i> + <i class="fa fa-fw icon-mobile-device fragment" style="font-size:5em"></i> </p>
+					</section>
+
+
+	                <section id="angular" data-background="images/bolt.jpg" data-background-transition='slide' >
+						<p class="fragment" style="font-size:1.3em; background: rgba(0,0,0,0.5); padding-top:0.5em; padding-bottom:0.5em;">Fast</p>
+                	</section>
+
+
+
+					<section>
+						<p>Android</p>
+						<img src="images/grid-1.png" width="45%">
+						<img src="images/grid-2.png" width="45%">
+					</section>
+					<section>
+						<p>IOS</p>
+						<img src="images/col-1.png" width="35%">
+						<img src="images/col-2.png" width="35%">
+						<img src="images/col-3.png" width="35%">
+						<img src="images/col-4.png" width="35%">
+					</section>
+
+					<section>
+						<p>React</p>
+						<img src="images/gridview.png" width="45%">
+					</section>
+
+				</section>
+
+
+				<section>
+					<section>
+						<h2>Componentes Disponibles</h2>
+						<p>No redescrubramos la rueda!</p>
+					</section>
+
+					<section>
+						<img src="images/components.png" width="25%">
+					</section>
+
+					<section>
+						<h2>¿ Y si no han creado el módulo xyz ?</h2>
+					</section>
+
+					<section>
+						<h2> Community Modules </h2>
+						<p class="fragment"> <a target="_blank" href="https://react.parts/native"> React Parts - Native </a> </p>
+					</section>
+
+					<section>
+						<h2> Native Modules </h2>
+						<p class="fragment"> <a target="_blank" href="https://facebook.github.io/react-native/docs/native-modules-ios.html#content"> React Native - Native Modules </a> </p>
+					</section>
+
+
+					<section>
+						<h2> "Show me the money" </h2>
+						<p><a  target="_blank" href="http://www.reactnative.com/built-with-react-native/">reactnative.com/built-with-react-native</a></p>
+					</section>
+					<section>
+						<p>Facebook Groups</p>
+						<img src="images/facebookgroups.jpg" >
+					</section>
+					<section>
+						<p>Facebook ADS</p>
+						<img src="images/facebookads.jpg" >
+					</section>
+					<section>
+						<p>Discovery VR</p>
+						<img src="images/dicoveryvr.jpg" >
+					</section>
+
+					<section>
+						<p style="font-size:3em;"> Lets Go Live! </p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<i class="fa fa-fw icon-javascript" style="font-size:7em"></i>
+						<span style="font-size:2em;">
+							<b>Chile</b>
+						 </span>
+					</section>
+
+
+					<section>
+						<i class="fa fa-fw icon-javascript" style="font-size:7em"></i>
+						<img
+						src="images/alert.png"
+						width="100%"
+						height="100%"
+							class="left">
+					</section>
+
+					<section>
+						<span style="font-size:2em;">Cool</span> <i class="fa fa-fw icon-javascript" style="font-size:7em"></i>
+					</section>
+
+
+					<section data-background-video="video/nodebots.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+							<h2>NodeBots</h2>
+						</div>
+					</section>
+
+					<section data-background-video="video/games.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+						<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+							<h2>Gaming</h2>
+						</div>
+					</section>
+
+					<section >
+						<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+							<p style="font-size:2em"><a target="_blank" href="http://lmv.rocks/viewer/?url=http://lmv.rocks/data/racecar/Design.svf"> No más AUTOCAD</a></p>
+						</div>
+					</section>
+
+
+
+					<section>
+						<p style="font-size:2em">Bet on</p>
+						<p class="biggestest font-shadow color-yellow">
+							<i class="fa fa-fw icon-javascript" style="font-size:7em"></i>
+						</p>
+						<p style="font-size:1.0em; padding-top:0.5em"><a href="http://twitter.com/fforres">@fforres</a> / <a href="http://twitter.com/xabadu">@xabadu</a></p>
+					</section>
+				</section>
 
 			</div>
 
