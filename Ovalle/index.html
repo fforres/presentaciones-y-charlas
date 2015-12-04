@@ -23,7 +23,7 @@
 
 		<!-- Fonts -->
 		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" id="fontawesome">
-        <link rel="stylesheet" href="lib/font/mfizz/font-mfizz.css" id="fontfizz">
+    <link rel="stylesheet" href="lib/font/mfizz/font-mfizz.css" id="fontfizz">
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -47,40 +47,43 @@
 			<div class="slides">
 
 				<section>
-					<h3>El JavaScripto y la Orden del DOM</h3>
-					<p>Mini Intro a React</p>
-				</section>
-
-
-				<section>
-					<h2>Autobombo</h2>
-					<img src="images/xabadu.jpg" width="40%" height="40%" class="left">
-					<ul class="autobombo-list">
-					<li>SDE @ Groupon</li>
-					<li>JS Chile & Chile Dev <3</li>
-					<li>IC Champion</li>
-					</ul>
-					<p>Fernando Larrañaga - @xabadu</p>
+					<p>Hola</p>
 				</section>
 
 				<section>
-					<h2>Autobombo</h2>
-					<ul class="autobombo-list">
-					<li>SDE @ Groupon</li>
-					<li>Noders & JS Chile</li>
-					<li>Level 3 Salsa Ninja</li>
-					</ul>
-					<img src="images/fforres.jpg" width="40%" height="40%" class="right">
+					<p class="bigger">HOLA!</p>
+					<aside class="notes">
+							Como estan?
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="bigger">Autobombo</h2>
+				</section>
+
+				<section>
 					<p>Felipe Torres - @fforres</p>
+					<div class="">
+						<ul class="autobombo-list">
+							<li>SDE @ Groupon</li>
+							<li>Noders & JS Chile</li>
+							<li>Level 3 Salsa Ninja</li>
+						</ul>
+						<img src="images/fforres.jpg" width="40%" height="40%" class="right">
+					</div>
+				</section>
+
+				<section>
+					<img class="fragment zoom-in" src="images/geekisthenewsexy.jpg" alt="" />
 				</section>
 
 				<section>
 					<h3>Javascript</h3>
-					<img 
+					<img
 						class="fragment zoom-in"
-						src="images/alert.png" 
-						width="100%" 
-						height="100%" 
+						src="images/alert.png"
+						width="100%"
+						height="100%"
 						class="left">
 				</section>
 
@@ -124,7 +127,7 @@
 						Conocen alguno de los siguientes?
                     </aside>
 				</section>
-				
+
 
 				<section>
                     <span class="fragment zoom-in"> jQuery - </span>
@@ -234,7 +237,7 @@
                 <section data-transition="slide-in slide-out">
                     <h1 class="bigger">ಠ_ಠ</h1>
                 </section>
-                
+
                 <section>
                     <table class="not-so-big">
                         <tr>
@@ -284,10 +287,10 @@
                     <div style="font-size: 150%;">
                         <pre><code class="jsx" data-trim contenteditable>
 {
-    React.createElement('a', 
+    React.createElement('a',
     {
         href: 'https://facebook.github.io/react/'
-    }, 
+    },
     'Hello!')
 }
 
@@ -320,11 +323,11 @@
                     <div style="font-size: 150%;">
                         <pre><code class="jsx" data-trim contenteditable>
 {
-    ReactDOM.render(React.createElement('ul', 
-        { 
-            className: 'unaLista' 
-        }, 
-        React.createElement('li', null, 'Primer Item'), 
+    ReactDOM.render(React.createElement('ul',
+        {
+            className: 'unaLista'
+        },
+        React.createElement('li', null, 'Primer Item'),
         React.createElement('li', null, 'Segundo Item')
     ), document.getElementById('example'));
 }
@@ -385,7 +388,7 @@ renderB: &lt;div>&lt;span>first&lt;/span>&lt;span>second&lt;/span>&lt;/div>
 => [insertNode &lt;span>second&lt;/span>]
                         </code></pre>
                     </p>
-                    </div> 
+                    </div>
                 </section>
 
 
@@ -401,7 +404,7 @@ renderB: &lt;span />
 => [removeNode &lt;div />], [insertNode &lt;span />]
                         </code></pre>
                     </p>
-                    </div> 
+                    </div>
                 </section>
 
                 <section>
@@ -416,7 +419,7 @@ renderB: &lt;div id="after" />
 => [replaceAttribute id "after"]
                         </code></pre>
                     </p>
-                    </div> 
+                    </div>
                 </section>
 
                 <section>

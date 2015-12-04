@@ -24,8 +24,11 @@
 }
 
 .autobombo-list {
-    margin-top: 15px !important;
+    margin-top: 1em !important;
     list-style-type: circle !important;
+}
+.autobombo-list li {
+    padding-top:0.8em
 }
 
 
@@ -47,7 +50,7 @@
 
 
 
-.highlight-php{
+.highlight-blue{
 	color: #6082BB !important;
 }
 .highlight-green{
@@ -56,12 +59,12 @@
 .color-red{
 	color: #FF0E0E !important;
 }
-.color-yellow{
-	color: yellow !important;
-}
-.color-laserena{
+.color-redish{
 	color: #8B0000 !important;
 }
 .color-blue{
 	color: blue !important;
+}
+.text-shadow{
+	text-shadow: 1px 1px 1px grey;
 }
