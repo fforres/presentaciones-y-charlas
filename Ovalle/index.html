@@ -1,499 +1,871 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+	<title>reveal.js – The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="@fforres">
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="@fforres">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/league.css" id="theme">
-		<link rel="stylesheet" href="css/theme/custom.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/league.css" id="theme">
+	<link rel="stylesheet" href="css/theme/custom.css">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Fonts -->
-		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" id="fontawesome">
-    <link rel="stylesheet" href="lib/font/mfizz/font-mfizz.css" id="fontfizz">
+	<!-- Fonts -->
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" id="fontawesome">
+	<link rel="stylesheet" href="lib/font/mfizz/font-mfizz.css" id="fontfizz">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 
-		<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+	<div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
 
-				<section>
-					<p>Hola</p>
-				</section>
+			<section>
+				<p>Hola</p>
+			</section>
 
-				<section>
-					<p class="bigger">HOLA!</p>
-					<aside class="notes">
-							Como estan?
-					</aside>
-				</section>
+			<section>
+				<p class="bigger">HOLA!</p>
+				<aside class="notes">
+					Como estan? Todos bien? todo bien? :)
+				</aside>
+			</section>
 
-				<section>
-					<h2 class="bigger">Autobombo</h2>
-				</section>
 
-				<section>
-					<p>Felipe Torres - @fforres</p>
-					<div class="">
-						<ul class="autobombo-list">
-							<li>SDE @ Groupon</li>
-							<li>Noders & JS Chile</li>
-							<li>Level 3 Salsa Ninja</li>
-						</ul>
-						<img src="images/fforres.jpg" width="40%" height="40%" class="right">
+
+			<section>
+				<img src="images/fforres.jpg" class="fragment" data-fragment-index="0">
+				<p class="fragment " data-fragment-index="1">Felipe Torres -
+					<span>@fforres</span>
+				</p>
+			</section>
+
+			<section>
+				<ul>
+					<p>Noders <i class="fa fa-fw fa-globe"></i> </p>
+					<p>JavaScript Chile</p>
+					<p>Level 3 Salsa Ninja</p>
+					<p>Podcast (NodersCast)</p>
+				</ul>
+			</section>
+
+
+			<section data-transition="zoom-in slide-out">
+				<p class="big text-shadow">Historia</p>
+				<aside class="notes">
+					Les vengo a contar una historia
+				</aside>
+			</section>
+
+			<section data-transition="zoom-in slide-out">
+				<p class="big text-shadow">Hi<span class="color-yellow">JS</span>toria</p>
+				<aside class="notes">
+					Les vengo a contar una historia
+				</aside>
+			</section>
+
+			<section class="people" data-background="images/me1.jpg" data-background-transition='slide' data-transition="zoom-in slide-out" style="width:100%; height:100%;">
+				<div class="" style="width:100%; display: table;height:100%;position: relative; ">
+					<div class="orange" style="display: table-row; width:100%;">
+						<div class="fragment zoom-in text" style="display:table-cell; text-align: left; vertical-align: top;">Ese es Fernando</div>
+						<div class="fragment zoom-in text" style="display:table-cell; text-align: right; vertical-align: top;">Ese soy Yo</div>
 					</div>
-				</section>
-
-				<section>
-					<img class="fragment zoom-in" src="images/geekisthenewsexy.jpg" alt="" />
-				</section>
-
-				<section>
-					<h3>Javascript</h3>
-					<img
-						class="fragment zoom-in"
-						src="images/alert.png"
-						width="100%"
-						height="100%"
-						class="left">
-				</section>
-
-				<section>
-					<h3>Javascript</h3>
-				</section>
-
-				<section data-background-video="video/nodebots.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
-					<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
-						<h2>NodeBots</h2>
+					<div class="orange" style="display: table-row; width:100%;">
+						<div class="fragment zoom-in text" style="display:table-cell; text-align: left; vertical-align: center;">Este es Yoda</div>
 					</div>
-				</section>
+				</div>
+			</section>
 
-				<section data-background-video="video/games.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
-					<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
-						<h2>Gaming</h2>
+			<section>
+				<p class="text">Software Engineer en
+					<span class="highlight-green"><b>GROUPON</b></span>
+				</p>
+				<p class="fragment zoom-in">Terminé la Universidad el año pasado</p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h2 class="fragment zoom-in">NODERS</h2>
+				<h2 class="fragment zoom-in">NODERSCAST</h2>
+				<h2 class="fragment zoom-in">NODEBOTS</h2>
+				<h2 class="fragment zoom-in">JAVASCRIPT CHILE</h2>
+				<small class="fragment zoom-in">JS & NodeJS</small>
+				</br>
+				<small class="fragment zoom-in">También bailo salsa</small>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h3>Importante:</h3>
+				<h1>JAVASCRIPT
+					<img src="images/chile.gif" style="display: inline-block; width: 16%; vertical-align: middle; " /> </h1>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h3>Importante:</h3>
+				<h1>JAVASCRIPT
+					<img src="images/chile.gif" style="display: inline-block; width: 16%; vertical-align: middle; " /> </h1>
+			</section>
+			<section data-transition="slide-out" class="initial">
+				<div>
+					<p class="title big">Una historia</p>
+				</div>
+			</section>
+			<section data-transition="slide-in slide-out" class="initial">
+				<div>
+					<p class="title big">Una
+						<span class="color-yellow">JS</span>toria</p>
+				</div>
+			</section>
+
+			<section data-background="images/starwars.png" data-background-transition='slide'>
+				<aside class="notes">
+					La historia comienza hace ya varios años
+				</aside>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<img class="stretch" src="images/udd.jpg" />
+			</section>
+
+			<section data-transition="slide-in zoom-out">
+				<p class="text">Volvamos a Fernando</p>
+			</section>
+
+			<section data-transition="zoom-in slide-out">
+				<p>El es Fernando</p>
+				<img class="stretch" src="images/fernando.jpg" />
+				<p>@xabadu</p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<p class="text">Fernando también trabaja en
+					<span class="highlight-green"><b>GROUPON</b></span>
+				</p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<p class="text">Pero hace tiempo, trabajaba en
+					<span class="highlight-php"><b>IBEX</b></span>
+				</p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<p class="text">... yo también trabajaba en
+					<span class="highlight-php"><b>IBEX</b></span>
+				</p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h1>JAN - 2012</h1>
+				<aside class="notes">
+					Conocí a fernando, y a mi primer gran Amor
+				</aside>
+			</section>
+
+			<section>
+				<h1>I <i class="fa fa-fw fa-heart fragment grow highlight-red"></i> Jquery</h1>
+				<aside class="notes">
+					Code Igniter, y jQuery
+				</aside>
+			</section>
+
+			<section>
+				<p class="big">JS = jQuery</p>
+			</section>
+
+			<section data-transition="zoom-in zoom-out">
+				<h1 class="bigger">ಠ_ಠ</h1>
+			</section>
+
+			<section>
+				<p class="big">JS != jQuery</p>
+			</section>
+
+			<section>
+				<div class="text">
+					<p class="text">
+
+						<pre>
+							<code class="js" data-trim contenteditable>
+								$.each(arr, function( index, value ){ //Hacer Algo });
+							</code>
+						</pre>
+				</div>
+				</p>
+				<p class="fragment zoom-in text">VS</p>
+				<div class="text fragment zoom-in">
+					<p class="text">
+
+						<pre>
+							<code class="js" data-trim contenteditable>
+								arr.map(function(el,i,a){ //Hacer Otra cosa })
+							</code>
+						</pre>
+				</div>
+				</p>
+			</section>
+
+
+			<section>
+				<h1 class="">#000000</h1>
+				<aside class="notes">
+					Periodo Negro
+				</aside>
+			</section>
+
+
+			<section>
+				<img class="stretch" src="images/cry.gif" />
+			</section>
+
+			<section>
+				<p class="big" style="text-decoration: line-through">$(&lt;element\>)</p>
+				</aside>
+			</section>
+
+
+			<section data-transition="zoom-in zoom-out">
+				<img class="stretch" src="images/fernando.jpg" />
+				<p>@xabadu</p>
+				<aside class="notes">
+					Fernando, no me gusta desarrollar.
+					Existe algun secreto? -Las palabras que me marcarían a futuro-
+				</aside>
+			</section>
+
+			<section data-transition="zoom-in zoom-out">
+				<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+					<h1> &ldquo;No&rdquo;</h1>
+					<p style="font-style: italic;">- Fernando</p>
+				</blockquote>
+			</section>
+
+			<section data-transition="zoom-in zoom-out">
+				<h1 class="big">ಠ_ಠ</h1>
+			</section>
+			<section data-transition="zoom-in zoom-out">
+				<h3>Lessons</h3>
+				<ol>
+					<li>Jquery Rocks</li>
+					<li>Jquery No es JS</li>
+				</ol>
+			</section>
+
+
+			<section>
+				<img src="images/quidmi.jpg" alt="" width="50%" />
+			</section>
+
+			<section>
+				<h1 class="bigger">
+					<i class="fa fa-fw icon-ruby-on-rails-alt color-red text-shadow"></i>
+				</h1>
+			</section>
+
+			<section>
+				<h2>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="fragment zoom-in">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="fragment zoom-in">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="fragment zoom-in">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+			</section>
+
+			<section>
+				<h2 class="">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+				<h2 class="">
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+					<i class="fa fa-fw fa-spinner fa-spin"></i>
+				</h2>
+			</section>
+			<section data-transition="zoom-in zoom-out">
+				<h1 class="bigger">ಠ_ಠ</h1>
+			</section>
+
+			<section>
+				<h1 class="bigger">
+					<i class="fa fa-fw icon-ruby-on-rails-alt color-red text-shadow"></i>
+				</h1>
+				<aside class="notes">
+					Me desencante de Rails, no estaba funcionando. Muy grande para lo que yo queria
+				</aside>
+
+			</section>
+			<section>
+				<h1 class="bigger">
+					<i class="fa fa-fw icon-nodejs highlight-green text-shadow"></i>
+				</h1>
+			</section>
+
+
+			<section data-background="images/bolt.jpg" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section data-transition="zoom-in zoom-out">
+				<h1 class="bigger">Tiempo Real</h1>
+			</section>
+
+			<section data-transition="zoom-in zoom-out">
+				<h1 class="bigger">
+					<i class="fa fa-fw icon-mobile-device text-shadow"></i>
+					<i class="fa fa-fw fa-globe text-shadow"></i>
+				</h1>
+			</section>
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<li>Jquery Rocks?</li>
+					<li>Jquery definitivamente no es JS</li>
+					<li>¿!Sockets!?</li>
+					<li>¿!JS en el servidor!?</li>
+				</ol>
+			</section>
+
+			<section>
+				<img class="fragment fade-out" src="images/fernando.jpg" style="width:25%;" />
+				<img class="fragment fade-out" src="images/me2.jpg" style="width:25%;" />
+			</section>
+
+			<section>
+				<img class="stretch" src="images/dell.png" style="background: rgb(255, 255, 255);border-radius: 300px;" />
+			</section>
+
+			<section>
+				<img class="stretch" src="images/nerd.jpg" />
+			</section>
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<ol>
+						<li>Jquery Rocks?</li>
+						<li>Jquery definitivamente no es JS</li>
+						<li>¿!Sockets!?</li>
+						<li>¿!JS en el servidor!?</li>
+						<li>I <i class="fa fa-fw fa-heart"></i> Desarrollar</li>
+					</ol>
+
+			</section>
+
+			<section>
+				<h1>Colabra</h1>
+				<img class="stretch" src="images/colabra.jpg" />
+			</section>
+
+			<section>
+				<h1>APIs / REST / Web Services</h1>
+				<aside class="notes">
+					Servicios Webs de Microsoft. Pero no Servicios Webs. Indio. Skype. Hello Felipe, what can i do for you.
+				</aside>
+			</section>
+
+			<section>
+				<img class="stretch" src="images/openenglish.jpg" />
+			</section>
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<li>Jquery? como que ... meh?</li>
+					<li>Jquery definitivamente no es JS</li>
+					<li>¿!Sockets!?</li>
+					<li>¿!JS en el servidor!?</li>
+					<li>I <i class="fa fa-fw fa-heart"></i> Desarrollar</li>
+					<li>English!</li>
+				</ol>
+			</section>
+			<section>
+				<p>
+					<span class="big">
+						Algo faltaba...
+					</span>
+				</p>
+				<p>
+					<span class="big">
+
+					</span>
+					<i class="bigger fa fa-fw icon-nodejs highlight-green text-shadow"></i>
+				</p>
+			</section>
+
+			<section data-background="images/doc.jpg" data-background-transition='slide'>
+				<h1 class="fragment zoom-in big color-yellow text-shadow">Back to the startup</h1>
+			</section>
+
+			<section data-background="images/ng.png" data-background-transition='slide'>
+			</section>
+
+			<section id="angular" data-background="images/angular.png" data-background-transition='slide'>
+			</section>
+
+			<section>
+				<p>
+					<span class="big">
+						Muchos FRAMEWORKS
+					</span>
+				</p>
+				<aside class="notes">
+					EmberJS, BackBone, Angular, Jquery, KnockOut, Knock,  Javascript Vanilla.
+				</aside>
+			</section>
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<li class="fragment fade-out">Jquery? como que ... meh?</li>
+					<li class="fragment fade-out">Jquery definitivamente no es JS</li>
+					<li class="fragment fade-out">¿!Sockets!?</li>
+					<li class="fragment fade-out">¿!JS en el servidor!?</li>
+					<li>I <i class="fa fa-fw fa-heart"></i> Desarrollar</li>
+					<li>English!</li>
+				</ol>
+			</section>
+
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<li>No se que es JS</li>
+					<li>JS rocks! <span class="fragment fade-in">(Cliente - Server)</span></li>
+					<li>I <i class="fa fa-fw fa-heart color-red"></i> Desarrollar</li>
+					<li>English!</li>
+					<li class="fragment fade-in">Fake it 'till you make it</li>
+				</ol>
+			</section>
+
+			<section>
+				<p>
+					<span class="big">
+						Algo faltaba...
+					</span>
+				</p>
+				<aside class="notes">
+					Queria conversar esto con gente. No habia comunidad, y en la pega, eramos 3 personas.
+					Y como buen opensource si no hay, se crea.
+				</aside>
+			</section>
+
+
+			<section id="noders">
+				<img class="stretch" src="images/noders.png" />
+			</section>
+
+			<section class="people" data-background="images/me1.jpg" data-background-transition='slide' data-transition="zoom-in slide-out" style="width:100%; height:100%;">
+				<div class="" style="width:100%; display: table;height:100%;position: relative; ">
+					<div class="orange" style="display: table-row; width:100%;">
+						<div class="fragment zoom-in text" style="display:table-cell; text-align: left; vertical-align: top;"> Se acuerdan?</div>
 					</div>
-				</section>
-
-				<section>
-					<h3>WebGL / (Autocad Web?)</h3>
-				</section>
-
-				<section data-background="gifs/woah.gif">
-					<div  class="fragment zoom-in" style="background-color: rgba(0, 0, 0, 0.4); color: #fff; padding: 20px;">
-						<h2>Woah!</h2>
+					<div class="orange" style="display: table-row; width:100%;">
 					</div>
-				</section>
-
-
-				<section>
-					<h3> Pero todo tiene un comienzo </h3>
-					<aside class="notes">
-						para entender esto, hay que primero revisar los inicios.
-                    </aside>
-				</section>
+				</div>
+			</section>
+
+			<section>
+				<p>
+					<span class="big">Cursos</span>
+				</p>
+				<p class="text fragment zoom-in"> Y talleres</p>
+				<p class="fragment zoom-in"> charlas y videos</p>
+				<p class="fragment zoom-in"> meetups y workshops</p>
+			</section>
+			<section data-background="images/noders2.png" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section data-background="images/google.jpg" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section data-background="images/nodebots.jpg" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section data-background="images/nodecopter.jpg" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section data-background="images/cursos.jpg" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section>
+				<img class="stretch" src="images/polera.jpg" />
+			</section>
+
+
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<li>Algo sé de JS</li>
+					<li>JS rocks! (Cliente - Server)</li>
+					<li>I <i class="fa fa-fw fa-heart color-red"></i> Desarrollar</li>
+					<li>English!</li>
+					<li>Fake it 'till you make it</li>
+					<li>Vivimos en un ecosistema inseguro</li>
+				</ol>
+			</section>
+
+			<section>
+				<p class="big">Nos da miedo no saber</p>
+				<p class="fragment zoom-in">...pero les cuento un secreto?</p>
+			</section>
+
+			<section>
+				<p class="big">It's OK</p>
+				<aside class="notes">
+					Y está bien no saber :D Y ese es el mensaje que queríamos transmitir. y estabamos llegando a harta gente...pero como llegamos a mas gente :)
+				</aside>
+			</section>
+
+
+			<section>
+				<p>
+					<span class="big">
+						Algo faltaba...
+					</span>
+				</p>
+			</section>
+
+			<section>
+				<p class="big">NodersCast <i class=" fragment zoom-in fa fa-fw fa-microphone"></i></p>
+				<p class="">
+					<span class="fragment zoom-in">
+						Podcast
+					</span>
+				</p>
+			</section>
+
+			<section>
+				<h3>Lessons</h3>
+				<ol>
+					<li>Algo se de JS</li>
+					<li>JS rocks! (Cliente - Server)</li>
+					<li>I <i class="fa fa-fw fa-heart color-red"></i> Desarrollar</li>
+					<li>English!</li>
+					<li>Fake it 'till you make it</li>
+					<li>No saber...It's OK</li>
+					<li class="fragment fade-in">Esta lleno de Cracks, pero nadie los conoce</li>
+				</ol>
+			</section>
+
+
+			<section data-transition="zoom-in slide-out">
+				<img src="images/bloqueo.jpg" />
+				<aside class="notes">
+					Porque en todo proyecto, llega un momento donde para crecer necesitas mas horas del dia.
+					Y más manos.
+					Y no basta contigo solo
+				</aside>
+			</section>
+
+
+			<section data-transition="zoom-in slide-out">
+				<img class="stretch" src="images/fernando.jpg" />
+				<aside class="notes">
+					Una mezcla de Suerte y Timing Me llevó a reencontrarme con fernando y postular a groupon. a mi megustaba JS, y saben con que trabaja Groupon... JS y NodeJS.
+					Si bien estaba genial en NoiseGrasp.
+					en Nosiegrasp mi escope era así
+				</aside>
+			</section>
+
+			<section>
+				<p class="">scope</p>
+				<p class="fragment zoom-in bigger">scope</p>
+				<aside class="notes">
+					Como trabajaba con Fernando, conversabamos mucho. y fernando se entero de este proyecto de Comunidades.
+				</aside>
+			</section>
+
+
+			<section>
+				<p class="text">Fernando no creía en las comunidades...</p>
+			</section>
+
+			<section>
+				<p class="text">o al menos, en como funcionaban en Chile</p>
+			</section>
+
+			<section>
+				<p>
+					<span class="big">
+						Algo faltaba...
+					</span>
+				</p>
+
+				<p>
+					<span class="fragment zoom-in highlight-php">aun</span>
+				</p>
+				<aside class="notes">
+					Yo le di a entender a Fernando que las comunidades eran utiles, y fernando me hizo entender que el modelo estaba roto.
+					Como buenos ingenieros, si esta roto, se arregla.
+				</aside>
+
+			</section>
+
+			<section>
+				<p class="big">OpenSource</p>
+				<aside class="notes">
+					Comunidad OpenSource, con el Modelo Opensource.
+					Mira lo que hace el de al lado, si te gusta te lo traes, lo adaptas, lo mejoras y lo compartes.
+					 Y le das el reconocimiento a quien lo merezca. Hicimos eso. Miramos afuera.
+				</aside>
+			</section>
+
+			<section>
+				<img src="images/jsconfco.jpg" />
+				<p class=""><a href="http://www.twitter.com/jsconfco" target="_blank">@Jsconfco</a></p>
+				<aside class="notes">
+					Pais que hace 5 años estaba mal, y ahora son la mejor comunidad. De que los vieran como caos, a que los vieran como exportadores de cerebros. un importante % de ingenieros en Ride.com son de colombia.
+
+					¿Que vimos ahí?
+				</aside>
+			</section>
+
+
+
+			<section data-background-video="video/nodebots.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+				<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+					<h2>NodeBots</h2>
+				</div>
+			</section>
+
+			<section data-background-video="video/games.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
+				<div style="background-color: rgba(0, 0, 0, 0.2); color: #fff; padding: 20px;">
+					<h2>Gaming</h2>
+				</div>
+			</section>
+
+			<section>
+				<a href="http://lmv.rocks/viewer/?url=http://lmv.rocks/data/racecar/Design.svf" target="_blank"><h3> WebGL</h3></a>
+			</section>
+
+			<section>
+				<h2>WEB ASSEMBLY</h2>
+				<h2>PERFORMANCE</h2>
+				<h2>PARALELISMO</h2>
+				<h2>... DISCO!?</h2>
+			</section>
+
+			<section>
+				<h2>Y Chile?</h2>
+			</section>
+
+			<section>
+				<h1 class="bigger">ಠ_ಠ</h1>
+			</section>
+
+			<section>
+				<p class="big">Pivoteamos</p>
+				<aside class="notes">
+					Pivotear no es cambiar el fondo. Pero si la forma. Porque entendimos que nuestro Scope era asi...y tenia que ser así.
+				</aside>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h1 class="big">JAVASCRIPT
+					<img src="images/chile.gif" style="display: inline-block; width: 16%; vertical-align: middle; " /> </h1>
+			</section>
+
+
+			<section>
+				<p>
+					<span class="big">
+						Pero aun
+						<span class="color-yellow">(si, aun)</span> faltaba algo
+					</span>
+				</p>
+			</section>
+
+			<section data-background="images/wewantyou.jpg" data-background-transition='zoom-in' data-transition="zoom-in slide-out">
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h1 class="big">Ustedes</h1>
+			</section>
+
+
+			<section data-transition="slide-in slide-out">
+					<p class="fragment fade-in">Santiago Js</p>
+					<p class="fragment fade-in">Valpo JS</p>
+					<p class="fragment fade-in">La Serena Js <span class="fragment fade-in">(PapayaJS)</span></p>
+					<p class="fragment fade-in">Chillan Js</p>
+					<p class="fragment fade-in">Rancagua JS</p>
+			</section>
+
+			<section>
+				<p class="not-so-big">Pichanga JS</p>
+				<p class="not-so-big">Beer JS</p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<h1> OVA
+					<span class="color-yellow">JS</span>
+				</h1>
+			</section>
+
+
+			<section data-transition="slide-in slide-out">
+				<p class="big"> En conclusión </p>
+			</section>
+
+			<section data-transition="slide-in slide-out">
+				<p class="big"> Hagamos esto Juntos </p>
+			</section>
+
+			<section>
+				<h1>
+					Muchas Gracias
+				</h1>
+			</section>
+
+
+			<section data-transition="zoom-in slide-out" data-background-image="images/rockstars.jpg" data-background-transition="fade-in" data-background-color="#000000">
+			</section>
 
-				<section>
-					<h3> JS Frameworks </h3>
-					<aside class="notes">
-						Conocen alguno de los siguientes?
-                    </aside>
-				</section>
 
 
-				<section>
-                    <span class="fragment zoom-in"> jQuery - </span>
-                    <span class="fragment zoom-in"> Batman.JS - </span>
-                    <span class="fragment zoom-in"> MooTools - </span>
-                    <span class="fragment zoom-in"> YUI - </span>
-                    <span class="fragment zoom-in"> jQuery UI - </span>
-                    <span class="fragment zoom-in"> Knockout JS - </span>
-                    <span class="fragment zoom-in"> Wakanda - </span>
-                    <span class="fragment zoom-in"> Dojo - </span>
-                    <span class="fragment zoom-in"> Ember.JS - </span>
-                    <span class="fragment zoom-in"> AngularJS - </span>
-                    <span class="fragment zoom-in"> BackBone.js - </span>
-                    <span class="fragment zoom-in"> KendoUI - </span>
-                    <span class="fragment zoom-in"> Unified.js</span>
-                    <aside class="notes">
-						Son hartos cierto?
-						Cual es la sensacion que da con la web?
-                    </aside>
-                </section>
 
 
-
-                <section data-background-video="video/rossa.mp4" data-background-video-loop data-background-transition="slide" data-background-color="#000000">
-				</section>
-
-				<section data-transition="zoom-in slide-out">
-                    <h2>La web se mueve muy rapido!</h2>
-                    <aside class="notes">
-						Los frameworks son abstraciones de JS, que intentan dar  soluciones a diversos problemas, y todos intentan solucionar en mayor o menor manera algunos problemas
-                    </aside>
-                </section>
-
-
-                <section data-transition="zoom-in slide-out">
-                    <ul>
-                    	<li class="fragment zoom-in">Desarrollo de Aplicaciones</li>
-                    	<li class="fragment zoom-in">Fragmentacion de Navegadores</li>
-                    	<li class="fragment zoom-in">Api DOM</li>
-                    	<li class="fragment zoom-in">Retro Compatibilidad</li>
-                    	<li class="fragment zoom-in">Experiencia de Desarrollo</li>
-                    	<li class="fragment zoom-in">Experiencia de Usuario</li>
-                    	<li class="fragment zoom-in">Unicorn Framework</li>
-                    	<li class="fragment zoom-in">MVC / MVVM / MV*</li>
-                    	<li class="fragment zoom-in">ETC...</li>
-                    </ul>
-                    <aside class="notes">
-						Cuando pensamos que ya era suficiente:
-                     </aside>
-                </section>
-
-
-                <section data-transition="zoom-in slide-out">
-                    <h2>ReactJS!</h2>
-                    <h4 class="fragment">(En serio? Otro más?)</h4>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-
-                <section data-transition="zoom-in slide-out">
-                    <h1 class="bigger">ಠ_ಠ</h1>
-                </section>
-
-
-				<section>
-                    <p class="">React se basa en 3 cosas fundamentales</p>
-                </section>
-
-
-
-                <section>
-                    <p class="not-so-big">1.- Componentes reutilizables </p>
-                </section>
-
-
-                <section>
-                    <p class="not-so-big">2.- Estado de la aplicación</p>
-                </section>
-
-
-                <section>
-                    <p class="not-so-big">3.- Hacer una cosa y hacerla bien</p>
-                </section>
-
-                 <section>
-                    <p class="not-so-big">React es solo la V dentro del MVC</p>
-                </section>
-
-
-
-                <section data-transition="zoom-in zoom-out">
-                    <p class="biggest font-shadow color-yellow"><i class="fa fa-fw text-right icon-javascript-alt"></i></p>
-                </section>
-
-
-
-
-                <section data-transition="slide-in slide-out">
-                    <p class="big">No todo lo que brilla es oro</p>
-                </section>
-
-                <section data-transition="slide-in slide-out">
-                    <p class="bigger">JavaScript & XML</p>
-                </section>
-
-                <section data-transition="slide-in slide-out">
-                    <h1 class="bigger">ಠ_ಠ</h1>
-                </section>
-
-                <section>
-                    <table class="not-so-big">
-                        <tr>
-                            <th class="text">OldSchool</th>
-                            <th class="text">ReactJS</th>
-                        </tr>
-                        <tr class="fragment zoom-in">
-                            <td>Directivas</td>
-                            <td>Componentes</td>
-                        </tr>
-                        <tr class="fragment zoom-in">
-                            <td>JS > DOM</td>
-                            <td>DOM Diff</td>
-                        </tr>
-                        <tr class="fragment zoom-in">
-                            <td>JS + XML</td>
-                            <td>JSX</td>
-                        </tr>
-                    </table>
-                </section>
-
-
-                <section>
-                    <p class="big">JSX</p>
-                    <p class="text fragment zoom-in">AKA: Ok... quizás no es tan malo</p>
-                </section>
-
-                <section>
-                    <p class="big">Esto</p>
-                </section>
-
-                <section>
-                    <div style="font-size: 190%;">
-                        <pre><code class="jsx" data-trim contenteditable>
-<a href="https://facebook.github.io/react/">
-    Hello!
-</a>
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">Se vuelve esto:</p>
-                </section>
-
-                <section>
-                    <div style="font-size: 150%;">
-                        <pre><code class="jsx" data-trim contenteditable>
-{
-    React.createElement('a',
-    {
-        href: 'https://facebook.github.io/react/'
-    },
-    'Hello!')
-}
-
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">Y esto</p>
-                </section>
-
-                <section>
-                    <div style="font-size: 190%;">
-                        <pre><code class="html" data-trim contenteditable>
-<div id="example">
-    <ul class="unaLista">
-        <li>Primer Item</li>
-        <li>Segundo Item</li>
-    </ul>
-</div>
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">Se vuelve esto</p>
-                </section>
-
-                <section>
-                    <div style="font-size: 150%;">
-                        <pre><code class="jsx" data-trim contenteditable>
-{
-    ReactDOM.render(React.createElement('ul',
-        {
-            className: 'unaLista'
-        },
-        React.createElement('li', null, 'Primer Item'),
-        React.createElement('li', null, 'Segundo Item')
-    ), document.getElementById('example'));
-}
-                        </code></pre>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="big">JSX</p>
-                    <p class="text fragment zoom-in">AKA: Ok... quizás no es tan malo</p>
-                </section>
-
-                <section>
-                    <p class="big">Componentes</p>
-                    <p class="fragment zoom-in">AKA: JA-JA Google </p>
-                </section>
-
-                <section id="angular" data-background="lib/img/angular.png" data-background-transition='slide' >
-                </section>
-
-                <section>
-                    <p class="big">¿Directivas?</p>
-                </section>
-
-                <section>
-                    <p class="bigger"> &lt;Element> </p>
-                    <p class="bigger"> &lt;Element> </p>
-                </section>
-
-                <section>
-                    <p class="big"> &lt;div> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;/div> </p>
-                </section>
-
-                <section>
-                    <p class="big"> &lt;div> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;Element/> </p>
-                    <p class="big"> &lt;/div> </p>
-                </section>
-
-                 <section>
-                    <p class="big">DOM Diff</p>
-                    <p class="fragment zoom-in">AKA: OMG!!!! </p>
-                </section>
-
-                <section>
-                    <div class="text">
-                    <p class="text">
-                        Agregar un Nodo
-                    </p>
-                    <p class="text">
-                        <pre><code class="html" data-trim contenteditable>
-renderA: &lt;div>&lt;span>first&lt;/span>&lt;/div>
-renderB: &lt;div>&lt;span>first&lt;/span>&lt;span>second&lt;/span>&lt;/div>
-=> [insertNode &lt;span>second&lt;/span>]
-                        </code></pre>
-                    </p>
-                    </div>
-                </section>
-
-
-                <section>
-                    <div class="text">
-                    <p class="text">
-                        Cambiar un Nodo
-                    </p>
-                    <p class="text">
-                        <pre><code class="html" data-trim contenteditable>
-renderA: &lt;div />
-renderB: &lt;span />
-=> [removeNode &lt;div />], [insertNode &lt;span />]
-                        </code></pre>
-                    </p>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="text">
-                    <p class="text">
-                        Actualizar un Nodo
-                    </p>
-                    <p class="text">
-                        <pre><code class="html" data-trim contenteditable>
-renderA: &lt;div id="before" />
-renderB: &lt;div id="after" />
-=> [replaceAttribute id "after"]
-                        </code></pre>
-                    </p>
-                    </div>
-                </section>
-
-                <section>
-                    <p class="bigger">ID</p>
-                    <aside class="notes">
-                    </aside>
-                </section>
-
-                <section>
-                    <p class="big">Pero falta algo</p>
-                    <p class="fragment zoom-in big">Código!</p>
-                </section>
-
-
-                <section>
-                    <p class="big">Yo se lo que estan pensando</p>
-                </section>
-
-                <section>
-                    <p class="big">Forres! Esto es de lo más cool!</p>
-                </section>
-
-                <section data-background="lib/img/awesome.gif" data-background-transition='slide'>
-                </section>
-
-                <section>
-                    <p class="big">Pero... puede ser mejor</p>
-                </section>
-
-                <section>
-                    <p class="big color-yellow">WEBPACK!</p>
-                    <p class="big color-yellow">BABEL!</p>
-                    <p class="text fragment zoom-in ">Dev Server</p>
-                    <p class="text fragment zoom-in ">Hot Reloading</p>
-                    <p class="text fragment zoom-in ">NPM</p>
-                    <p class="text fragment zoom-in ">DX</p>
-                    <p class="text fragment zoom-in ">GIT</p>
-                </section>
-
-
-
-
-
-			</div>
 
 		</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+	</div>
 
-		<script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+			// Optional reveal.js plugins
+			dependencies: [{
+				src: 'lib/js/classList.js',
+				condition: function() {
+					return !document.body.classList;
+				}
+			}, {
+				src: 'plugin/markdown/marked.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/markdown/markdown.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src: 'plugin/zoom-js/zoom.js',
+				async: true
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}]
+		});
+	</script>
 
-		</script>
+</body>
 
-	</body>
 </html>
