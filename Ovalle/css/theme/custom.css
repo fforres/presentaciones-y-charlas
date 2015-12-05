@@ -34,7 +34,9 @@
     padding-top:0.8em
 }
 
-
+.small{
+	font-size: 65% !important;
+}
 .not-so-big{
 	font-size: 200% !important;
 }
